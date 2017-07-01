@@ -1,0 +1,35 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  fullname: MyString
+  mobile_no: MyString
+  alternate_no: MyString
+  email: MyString
+  access_token: MyString
+  file: MyString
+  file_file_name: MyString
+  date: 2017-06-30
+  status: false
+  address1: MyString
+  address2: MyString
+  customer_number: MyString
+  pincode: MyString
+  plan_start_date: MyString
+  plan_expiry_date: MyString
+
+two:
+  fullname: MyString
+  mobile_no: MyString
+  alternate_no: MyString
+  email: MyString
+  access_token: MyString
+  file: MyString
+  file_file_name: MyString
+  date: 2017-06-30
+  status: false
+  address1: MyString
+  address2: MyString
+  customer_number: MyString
+  pincode: MyString
+  plan_start_date: MyString
+  plan_expiry_date: MyString
