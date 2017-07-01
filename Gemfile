@@ -13,6 +13,7 @@ gem 'pry-byebug'
 gem 'formtastic'
 gem 'activemerchant'
 gem 'payuindia'
+gem "font-awesome-rails"
 gem 'active_skin'
 gem 'active_admin_theme'
 gem 'imagemagick-identify', '~> 0.0.1'
