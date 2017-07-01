@@ -28,7 +28,7 @@ form do |f|
       :input_html => {:value => Customer.first.nil? ? 'C' + Date.today.strftime('%Y%m%d').to_s + 
 '1' : 'C' +  Date.today.strftime('%Y%m%d').to_s + Customer.last.id.next.to_s }
       f.input :fullname  
-      f.input :plan_id, :as => :select, :collection => Plan.all.map{|p| [p.plan_name,p.id]}
+      f.input :plan_id, :as => :select, if: proc{Plan.all.map{|p| [p.plan_name,p.id]}}
       f.input :plan_start_date, :as => :datepicker,  :input_html => {:value => Date.today}
       f.input :plan_expiry_date, :as => :datepicker
       f.input :date, :as => :datepicker,  :input_html => {:value => Date.today}

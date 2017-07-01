@@ -18,8 +18,8 @@ permit_params :cash, :check, :plan_id, :fullname,:customer_id,:bank_name,:check_
 form do |f|
     f.inputs "Offline Details" do
 
-      f.input :plan_id, :as => :select, :collection => Plan.all.map{|p| [p.plan_name,p.id]}
-      f.input :customer_id,  :as => :select, :collection => Customer.all.map{|c| [c.fullname,c.id]}
+      f.input :plan_id, :as => :select, if: proc{Plan.all.map{|p| [p.plan_name,p.id]}}
+      f.input :customer_id,  :as => :select, if: proc{Customer.all.map{|c| [c.fullname,c.id]}}
       f.input :cash
       f.input :check
       f.input :bank_name
